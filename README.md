@@ -29,36 +29,89 @@ automatizacao-cadastro/
 
 ---
 
-## 🔧 **Como Executar**
-1. **Instale as dependências**:
-   ```bash
-   pip install pandas pyautogui
+Claro!  
+Vou **formatar exatamente** o que você mandou no estilo correto para você copiar e colar no **Edit** do GitHub, com `##`, `-`, `bash`, `java`, listas certinhas e divisores.
 
-2. **Prepare o ambiente**:
+Aqui está:
 
-    Coloque produtos.csv na mesma pasta do script.
+```markdown
+## 🛠️ Como Executar
 
-    Use pegar_posição.py para obter as coordenadas do mouse no seu monitor.
+### 1. Compilar o Projeto
+```bash
+javac -d bin src/*.java
+```
 
-3. **Execute o script principal**:
-    python automacao.py
+### 2. Executar o Programa
+```bash
+java -cp bin Main
+```
 
-## 📋 **Etapas da Automação**
-1. **Abre o navegador**:
-    pyautogui.press("win")
-    pyautogui.write("chrome")
-    pyautogui.press("enter")
-2. **Faz login no sistema**:
-    Preenche e-mail e senha automaticamente.
+### 3. Fluxo de Uso
+- Registre um personal trainer.
+- Faça login.
+- Cadastre alunos, adicione avaliações e gere treinos!
 
-3. **Cadastra produtos**:
-        Percorre cada linha do CSV.
-        Preenche campos como código, marca, preço e observações (se houver).
-        Envia o formulário e repete até finalizar todos os registros.
+---
 
-## 💡 **Resultados Esperados**
-    Economia de tempo: Cadastro de 264 produtos em minutos, sem intervenção manual.
-    Redução de erros: Dados são inseridos diretamente do CSV, evitando digitação incorreta.
-    Escalabilidade: Adaptável para outras tarefas repetitivas (ex: relatórios, extração de dados).
+## 🎯 Exemplos de Uso
 
+<<<<<<< HEAD
+### 1. Cadastro de Atleta
+```java
+Atleta atleta = new Atleta(
+    "Carlos",         // Nome
+    1.85,             // Altura (metros)
+    "M",              // Sexo
+    true,             // Favorito
+    28,               // Idade
+    75.5,             // Peso (kg)
+    22.1,             // IMC
+    15.0,             // GC (% gordura corporal)
+    2000,             // ME (metabolismo energético)
+    1800,             // MB (metabolismo basal)
+    2.5,              // GV (gasto calórico)
+    new String[]{"Segunda", "Quarta"}, // Dias disponíveis
+    "Treino Pesado",  // Tipo de treino
+    true,             // Offseason (fora de temporada)
+    false,            // Precontest (pré-competição)
+    300,              // Gramas de carboidrato/dia
+    4                 // Litros de água/dia
+);
+```
+
+### 2. Geração de Treino Baseado no IMC
+```java
+if (imc < 18.5) {
+    treinoDoDia.adicionarTipo("Ganho de Massa");
+    treinoDoDia.adicionarExercicio("Supino");
+    treinoDoDia.adicionarExercicio("Agachamento");
+    treinoDoDia.setDuracaoMedia(90); // 90 minutos
+    System.out.println("Treino para ganho de massa gerado!");
+}
+```
+
+---
+
+## 📊 Vantagens
+
+- **Redução de Erros**: Dados calculados automaticamente (ex: IMC).
+- **Organização**: Histórico de avaliações e treinos por aluno.
+- **Flexibilidade**: Adaptável para diferentes perfis de alunos.
+
+---
+
+## 👥 Contribuidores
+
+- Gabriel Ribeiro Filice Chayb
+- Ítalo Nunes Tillmann de Abreu
+- Leandro Elias Fontes Carrijo
+- Leandro Silva Pina de Campos
+- Pedro Henrique Ferreira Simões
+```
+
+---
+=======
 ✨ Inspiração: Projeto desenvolvido durante a aula Python Power UP da Jornada Python.
+
+>>>>>>> c5972d5b9688f74c517d1c8b9d57c85b0dd22040
