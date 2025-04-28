@@ -103,4 +103,4 @@ if (imc < 18.5) {
 =======
 ✨ Inspiração: Projeto desenvolvido durante a aula Python Power UP da Jornada Python.
 
->>>>>>> c5972d5b9688f74c517d1c8b9d57c85b0dd22040
+
