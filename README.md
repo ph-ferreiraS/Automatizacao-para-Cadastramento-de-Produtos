@@ -1,4 +1,4 @@
-# 🐍 Automação de Cadastro de Produtos com Python
+# 🐍 Automatização de Cadastro de Produtos com Python
 
 Este projeto demonstra como automatizar o cadastro de produtos em um sistema web utilizando Python. A automação controla o mouse e o teclado para preencher formulários, economizando horas de trabalho manual e reduzindo erros humanos.
 
