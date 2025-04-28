@@ -1,4 +1,5 @@
-# 🐍 Automatização de Cadastro de Produtos com Python
+
+# 🐍 Automação de Cadastro de Produtos com Python
 
 Este projeto demonstra como automatizar o cadastro de produtos em um sistema web utilizando Python. A automação controla o mouse e o teclado para preencher formulários, economizando horas de trabalho manual e reduzindo erros humanos.
 
@@ -21,86 +22,64 @@ Este projeto demonstra como automatizar o cadastro de produtos em um sistema web
 ---
 
 ## 📂 **Estrutura do Projeto**
+```
 automatizacao-cadastro/
-├── produtos.csv # Base de dados dos produtos
-├── pegar_posição.py # Script auxiliar para capturar coordenadas do mouse
-└── codigo.py # Script principal de automação
-
-
----
-
-Claro!  
-Vou **formatar exatamente** o que você mandou no estilo correto para você copiar e colar no **Edit** do GitHub, com `##`, `-`, `bash`, `java`, listas certinhas e divisores.
-
-Aqui está:
-
-```markdown
-## 🛠️ Como Executar
-
-### 1. Compilar o Projeto
-```bash
-javac -d bin src/*.java
-```
-
-### 2. Executar o Programa
-```bash
-java -cp bin Main
-```
-
-### 3. Fluxo de Uso
-- Registre um personal trainer.
-- Faça login.
-- Cadastre alunos, adicione avaliações e gere treinos!
-
----
-
-## 🎯 Exemplos de Uso
-
-<<<<<<< HEAD
-### 1. Cadastro de Atleta
-```java
-Atleta atleta = new Atleta(
-    "Carlos",         // Nome
-    1.85,             // Altura (metros)
-    "M",              // Sexo
-    true,             // Favorito
-    28,               // Idade
-    75.5,             // Peso (kg)
-    22.1,             // IMC
-    15.0,             // GC (% gordura corporal)
-    2000,             // ME (metabolismo energético)
-    1800,             // MB (metabolismo basal)
-    2.5,              // GV (gasto calórico)
-    new String[]{"Segunda", "Quarta"}, // Dias disponíveis
-    "Treino Pesado",  // Tipo de treino
-    true,             // Offseason (fora de temporada)
-    false,            // Precontest (pré-competição)
-    300,              // Gramas de carboidrato/dia
-    4                 // Litros de água/dia
-);
-```
-
-### 2. Geração de Treino Baseado no IMC
-```java
-if (imc < 18.5) {
-    treinoDoDia.adicionarTipo("Ganho de Massa");
-    treinoDoDia.adicionarExercicio("Supino");
-    treinoDoDia.adicionarExercicio("Agachamento");
-    treinoDoDia.setDuracaoMedia(90); // 90 minutos
-    System.out.println("Treino para ganho de massa gerado!");
-}
+├── produtos.csv          # Base de dados dos produtos
+├── pegar_posição.py      # Script auxiliar para capturar coordenadas do mouse
+└── codigo.py          # Script principal de automação
 ```
 
 ---
 
-## 📊 Vantagens
+## 🔧 **Como Executar**
+1. **Instale as dependências**:
+   ```bash
+   pip install pandas pyautogui
+   ```
 
-- **Redução de Erros**: Dados calculados automaticamente (ex: IMC).
-- **Organização**: Histórico de avaliações e treinos por aluno.
-- **Flexibilidade**: Adaptável para diferentes perfis de alunos.
+2. **Prepare o ambiente**:
+   - Coloque `produtos.csv` na mesma pasta do script.
+   - Use `pegar_posição.py` para obter as coordenadas do mouse no seu monitor.
 
+3. **Execute o script principal**:
+   ```bash
+   python automacao.py
+   ```
 
-=======
-✨ Inspiração: Projeto desenvolvido durante a aula Python Power UP da Jornada Python.
+---
+
+## 📋 **Etapas da Automação**
+1. **Abre o navegador**:
+   ```python
+   pyautogui.press("win")
+   pyautogui.write("chrome")
+   pyautogui.press("enter")
+   ```
+
+2. **Faz login no sistema**:
+   - Preenche e-mail e senha automaticamente.
+
+3. **Cadastra produtos**:
+   - Percorre cada linha do CSV.
+   - Preenche campos como código, marca, preço e observações (se houver).
+   - Envia o formulário e repete até finalizar todos os registros.
+
+---
+
+## 💡 **Resultados Esperados**
+- **Economia de tempo**: Cadastro de 264 produtos em minutos, sem intervenção manual.
+- **Redução de erros**: Dados são inseridos diretamente do CSV, evitando digitação incorreta.
+- **Escalabilidade**: Adaptável para outras tarefas repetitivas (ex: relatórios, extração de dados).
+
+---
+
+## 📌 **Notas Importantes**
+- **Coordenadas do mouse**: Ajuste as posições `(x, y)` conforme seu monitor usando `pegar_posição.py`.
+- **Tempo de espera**: Ajuste `pyautogui.PAUSE` conforme a velocidade do seu sistema.
+
+---
+
+✨ **Inspiração**: Projeto desenvolvido durante a aula *Python Power UP* da [Jornada Python](https://www.youtube.com/@hashtagprogramacao).  
+``` 
 
 
