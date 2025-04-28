@@ -99,18 +99,7 @@ if (imc < 18.5) {
 - **Organização**: Histórico de avaliações e treinos por aluno.
 - **Flexibilidade**: Adaptável para diferentes perfis de alunos.
 
----
 
-## 👥 Contribuidores
-
-- Gabriel Ribeiro Filice Chayb
-- Ítalo Nunes Tillmann de Abreu
-- Leandro Elias Fontes Carrijo
-- Leandro Silva Pina de Campos
-- Pedro Henrique Ferreira Simões
-```
-
----
 =======
 ✨ Inspiração: Projeto desenvolvido durante a aula Python Power UP da Jornada Python.
 
